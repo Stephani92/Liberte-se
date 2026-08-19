@@ -51,3 +51,6 @@ Desktop.ini
 *.sw?
 *.psd
 *.zip
+
+# Local editable/source design files
+arquivos-editaveis/

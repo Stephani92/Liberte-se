@@ -589,14 +589,15 @@ function Pilares() {
 
 function Experiencias() {
   return (
-    <section id="experiencias" className="experiences-section relative overflow-hidden bg-ink py-24 text-cream md:py-36">
-      <div className="experiences-section__art" aria-hidden="true">
-        <img
-          src={`${import.meta.env.BASE_URL}zebra.jpg`}
-          alt=""
-          className="experiences-section__art-image"
-        />
-      </div>
+    <section id="experiencias" className="experiences-section relative overflow-hidden bg-ink pb-24 text-cream md:pb-36">
+      <div className="experiences-section__zebra-span relative overflow-hidden pt-24 md:pt-36">
+        <div className="experiences-section__art" aria-hidden="true">
+          <img
+            src={`${import.meta.env.BASE_URL}zebra.jpg`}
+            alt=""
+            className="experiences-section__art-image"
+          />
+        </div>
 
       <div className="shell relative">
         <ScrollReveal>
@@ -618,9 +619,10 @@ function Experiencias() {
 
       <JourneyTimeline />
 
-      <ScrollReveal delay={100} className="mt-14 md:mt-20">
+      <ScrollReveal delay={100} className="experiences-section__video mt-14 md:mt-20">
         <ExperienceVideo />
       </ScrollReveal>
+      </div>
 
       <AgendaExperience />
 
