@@ -1,0 +1,13 @@
+agents:
+  - name: tech-lead
+    role: lead
+    description: Lidera a arquitetura técnica do Liberte-se.
+  - name: frontend
+    role: implementer
+    description: Constrói a interface em React + TypeScript + Tailwind.
+  - name: ux
+    role: designer
+    description: Define a experiência, navegação e responsividade.
+  - name: product-owner
+    role: owner
+    description: Prioriza valor e valida alinhamento com a marca.

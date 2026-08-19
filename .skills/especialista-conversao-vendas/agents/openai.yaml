@@ -1,0 +1,4 @@
+interface:
+  display_name: "Especialista em Conversão de Vendas"
+  short_description: "Audita páginas e prioriza hipóteses de CRO"
+  default_prompt: "Use $especialista-conversao-vendas para analisar esta página e propor melhorias priorizadas de conversão."
