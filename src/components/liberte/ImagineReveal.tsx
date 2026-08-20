@@ -82,6 +82,13 @@ export function ImagineReveal() {
               loading="lazy"
             />
           </figure>
+          <figure className="partners-section__mobile-logo" aria-label="Liberte-se">
+            <img
+              src={`${base}LOGO-20260818T132748Z-1-001/LOGO/Logomarca%20Liberte-se%20batom.png`}
+              alt="Logomarca Liberte-se batom"
+              loading="lazy"
+            />
+          </figure>
           <figure>
             <img
               src={`${base}media/Liberte-se0178.jpg`}

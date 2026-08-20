@@ -214,6 +214,7 @@
 .experiences-section__art {
   position: absolute;
   inset: 0 auto auto 0;
+  z-index: 0;
   width: clamp(5.5rem, 14vw, 12rem);
   height: 100%;
   filter: drop-shadow(0.5rem 0.2rem 0.7rem rgb(0 0 0 / 24%));
@@ -252,10 +253,27 @@
   opacity: 0.88;
 }
 
+.experiences-section__intro {
+  padding-left: clamp(4.5rem, 16vw, 14rem);
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .experiences-section__intro {
+    padding-left: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .experiences-section__intro {
+    padding-left: 4rem;
+  }
+}
+
 .experiences-section__video {
   position: relative;
   z-index: 1;
-  margin-left: clamp(3.75rem, 10vw, 8rem);
+  margin-left: 0;
 }
 
 .experiences-section__script-letter {
@@ -308,8 +326,6 @@
   bottom: 4.5rem;
   width: clamp(13rem, 22vw, 19rem);
   height: auto;
-  border-radius: 0.65rem;
-  background-color: var(--terracotta-deep);
   object-fit: contain;
   transform: translateX(50%);
   pointer-events: none;
@@ -325,7 +341,7 @@
 
 @media (max-width: 767px) {
   .experiences-section__video {
-    margin-left: 2.75rem;
+    margin-left: 0;
   }
 
   .experiences-section__art {
@@ -594,6 +610,10 @@
   margin-top: 1.5rem;
 }
 
+.partners-section__mobile-logo {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .partners-section__grid {
     grid-template-columns: minmax(0, 1fr);
@@ -601,16 +621,14 @@
   }
 
   .partners-section__primary-media {
+    order: 2;
     width: min(100%, 24rem);
     margin-inline: auto;
     padding: 0.5rem;
   }
 
   .partners-section__content {
-    align-self: auto;
-    width: min(100%, 34rem);
-    margin-inline: auto;
-    padding-top: 0;
+    display: contents;
   }
 
   .partners-section__magazine-banner {
@@ -618,9 +636,23 @@
   }
 
   .partners-section__title {
+    order: 1;
     width: 100%;
-    margin-top: 0.5rem;
+    margin-top: -2rem;
     transform: none;
+  }
+
+  .partners-section__title-as {
+    margin-left: 0;
+    transform: translateY(-0.1em) rotate(-4deg);
+  }
+
+  .partners-section__description {
+    order: 3;
+    width: min(calc(100% - 1.5rem), 34rem);
+    margin-top: -1.5rem;
+    margin-inline: auto;
+    font-size: 1rem;
   }
 
   .partners-section__title-word {
@@ -637,15 +669,40 @@
   }
 
   .partners-section__secondary-media {
+    order: 5;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0;
     width: min(100%, 34rem);
+    margin-top: -1.5rem;
     margin-inline: auto;
   }
 
   .partners-section__content-action .btn-base {
     width: min(100%, 34rem);
+  }
+
+  .partners-section__content-action {
+    order: 4;
+    width: min(100%, 34rem);
+    margin-top: -1.5rem;
+    margin-inline: auto;
+  }
+
+  .partners-section__mobile-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    overflow: hidden;
+    background: var(--ink);
+  }
+
+  .partners-section__mobile-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 }
 

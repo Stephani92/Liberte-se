@@ -113,7 +113,7 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
             key={item.label}
             href={item.href}
             onClick={onClose}
-            className="display text-[2.5rem] text-cream transition-colors hover:text-rose"
+            className="display text-[2.125rem] uppercase leading-none tracking-[0.015em] text-cream transition-colors hover:text-rose"
           >
             {item.label}
           </a>

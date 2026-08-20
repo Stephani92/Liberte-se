@@ -11,7 +11,6 @@ import jornal from "@/assets/jornal.webp.asset.json";
 import cafe from "@/assets/cafe.webp.asset.json";
 import zebra from "@/assets/zebra.webp.asset.json";
 import lipscard from "@/assets/lipscard.webp.asset.json";
-import eventoVideo from "@/assets/evento.mp4.asset.json";
 import eventoPoster from "@/assets/evento-poster.jpg.asset.json";
 
 /**
@@ -65,6 +64,6 @@ export const photos = {
 };
 
 export const video = {
-  src: eventoVideo.url,
+  src: `${import.meta.env.BASE_URL}LP.mp4`,
   poster: eventoPoster.url,
 };
