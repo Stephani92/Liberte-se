@@ -11,7 +11,6 @@ import jornal from "@/assets/jornal.webp.asset.json";
 import cafe from "@/assets/cafe.webp.asset.json";
 import zebra from "@/assets/zebra.webp.asset.json";
 import lipscard from "@/assets/lipscard.webp.asset.json";
-import eventoPoster from "@/assets/evento-poster.jpg.asset.json";
 
 /**
  * Assets oficiais do Liberte-se.
@@ -61,9 +60,4 @@ export const photos = {
     src: lipscard.url,
     alt: "Cartão com a frase: o clube para mulheres que decidiram ocupar o próprio lugar no mundo",
   },
-};
-
-export const video = {
-  src: `${import.meta.env.BASE_URL}LP.mp4`,
-  poster: eventoPoster.url,
 };

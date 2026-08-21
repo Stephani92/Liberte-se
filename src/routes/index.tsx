@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 
 import { EditorialImage } from "@/components/liberte/EditorialImage";
-import { ExperienceVideo } from "@/components/liberte/ExperienceVideo";
 import { ImagineReveal } from "@/components/liberte/ImagineReveal";
 import { Marquee } from "@/components/liberte/Marquee";
 import { ScrollReveal } from "@/components/liberte/ScrollReveal";
@@ -876,9 +875,6 @@ function Experiencias() {
 
       <JourneyTimeline />
 
-      <ScrollReveal delay={100} className="experiences-section__video mt-14 md:mt-20">
-        <ExperienceVideo />
-      </ScrollReveal>
       </div>
 
       <AgendaExperience />
