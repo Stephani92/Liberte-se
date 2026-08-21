@@ -875,6 +875,10 @@ function Experiencias() {
 
       <JourneyTimeline />
 
+      <div
+        className="experiences-section__video mt-14 aspect-[16/10] w-full md:mt-20 md:aspect-[21/9]"
+        aria-hidden="true"
+      />
       </div>
 
       <AgendaExperience />
